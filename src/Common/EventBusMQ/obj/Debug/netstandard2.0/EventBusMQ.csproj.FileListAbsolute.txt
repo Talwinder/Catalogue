@@ -1,0 +1,9 @@
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\bin\Debug\netstandard2.0\EventBusMQ.deps.json
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\bin\Debug\netstandard2.0\EventBusMQ.dll
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\bin\Debug\netstandard2.0\EventBusMQ.pdb
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\obj\Debug\netstandard2.0\EventBusMQ.csprojAssemblyReference.cache
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\obj\Debug\netstandard2.0\EventBusMQ.AssemblyInfoInputs.cache
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\obj\Debug\netstandard2.0\EventBusMQ.AssemblyInfo.cs
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\obj\Debug\netstandard2.0\EventBusMQ.csproj.CoreCompileInputs.cache
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\obj\Debug\netstandard2.0\EventBusMQ.dll
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\obj\Debug\netstandard2.0\EventBusMQ.pdb

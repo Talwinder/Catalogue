@@ -1,0 +1,26 @@
+Product projects
+---------------------------------------
+C:\Micro Services\Catalogue\src\Common\EventBusMQ\EventBusMQ.csproj
+C:\Micro Services\Catalogue\src\Catalogue\Catalogue.csproj
+C:\Micro Services\Catalogue\src\Basket.API\Basket.API.csproj
+
+
+Test projects
+---------------------------------------
+
+
+Invalid projects
+---------------------------------------
+{none}
+
+
+Skipped projects
+---------------------------------------
+{none}
+
+
+Excluded projects
+---------------------------------------
+{none}
+
+

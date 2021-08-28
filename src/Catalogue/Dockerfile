@@ -3,8 +3,6 @@ WORKDIR /app
 EXPOSE 8000 80
 EXPOSE 8000 443
 
-
-
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
 COPY ["src/Catalogue/Catalogue.csproj", "src/Catalogue/"]

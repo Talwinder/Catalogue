@@ -8,7 +8,7 @@ WORKDIR /src1
 COPY ["Catalogue.csproj", "src/Catalogue/"]
 RUN dotnet restore "src\Catalogue\Catalogue.csproj"
 COPY . .
-WORKDIR "/src1/src/Catalogue"
+
 RUN dotnet build "Catalogue.csproj" -c Release -o /app/build
 
 FROM build AS publish

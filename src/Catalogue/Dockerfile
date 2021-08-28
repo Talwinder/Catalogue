@@ -5,7 +5,7 @@ EXPOSE 8000 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src1
-COPY ["../Catalogue/Catalogue.csproj", "src/Catalogue/"]
+COPY ["Catalogue.csproj", "src/Catalogue/"]
 RUN dotnet restore "src\Catalogue\Catalogue.csproj"
 COPY . .
 WORKDIR "/src1/src/Catalogue"

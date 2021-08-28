@@ -4,11 +4,11 @@ EXPOSE 8000 80
 EXPOSE 8000 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
-WORKDIR /src
+WORKDIR /src1
 COPY ["src/Catalogue/Catalogue.csproj", "src/Catalogue/"]
 RUN dotnet restore "src\Catalogue\Catalogue.csproj"
 COPY . .
-WORKDIR "/src/src/Catalogue"
+WORKDIR "/src1/src/Catalogue"
 RUN dotnet build "Catalogue.csproj" -c Release -o /app/build
 
 FROM build AS publish

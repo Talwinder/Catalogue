@@ -7,6 +7,10 @@ trigger:
 - master
 
 pool:
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: 
   vmImage: 'windows-latest'
 
 variables:

@@ -8,8 +8,8 @@ namespace EventBusRabbitMQ
     public class RabbitMQConnection : IRabbitMQConnection
     {
         private readonly IConnectionFactory _connectionFactory;
-        private IConnection _connection;
-        private bool _disposed = false;
+        private IConnection _connection;//1
+        private bool _disposed =  false;
 
         public RabbitMQConnection(IConnectionFactory connectionFactory)
         {

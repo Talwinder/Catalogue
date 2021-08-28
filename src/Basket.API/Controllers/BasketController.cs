@@ -14,7 +14,7 @@ namespace Basket.API.Controllers
     public class BasketController : ControllerBase
     {
         private readonly IBasketRepository _repository;
-        private readonly IMapper _mapper;
+      //  private readonly IMapper _mapper;
        // private readonly EventBusRabbitMQProducer _eventBus;
 
         public BasketController(IBasketRepository repository)

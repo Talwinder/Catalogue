@@ -18,4 +18,6 @@ services:
     build:
       context: .
       dockerfile: src/Basket.API/Dockerfile
+volumes: 
+    mongo_data: 
    

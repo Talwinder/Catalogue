@@ -5,7 +5,7 @@ services:
       container_name: catalogdb
       restart: always
       volumes:  
-         - ${WEBAPP_STORAGE_HOME}/site:/data/db
+         - mongo_data:/data/db
       ports:
          - "27017:27017"
     basketdb:
@@ -20,9 +20,6 @@ services:
           - "CatalogDatabaseSettings:ConnectionString=mongodb://catalogdb:27017"
       depends_on: 
           - catalogdb
-      volumes: 
-          - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
-          - ${HOME}/.aspnet/https:/root/.aspnet/https/     
       ports: 
           -  "8000:80"
     basket.api:
@@ -31,8 +28,5 @@ services:
           - "ConnectionString:Redis=basketdb:6379"
       depends_on: 
           - basketdb
-      volumes: 
-          - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
-          - ${HOME}/.aspnet/https:/root/.aspnet/https/     
       ports: 
           -  "8001:80"              

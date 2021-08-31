@@ -21,7 +21,7 @@ services:
       depends_on: 
           - catalogdb
       ports: 
-          -  "8003:80"
+          -  "80:80"
     basket.api:
       environment: 
           - ASPNETCORE_ENVIRONMENT=Development

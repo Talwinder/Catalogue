@@ -9,12 +9,12 @@ services:
      image: redis
 
   catalogue:
-    image: ${DOCKER_REGISTRY-}catalogue
+    image: tsin24/catalogue
     build:
       context: .
       dockerfile: src/Catalogue/Dockerfile
   basket.api:
-    image: ${DOCKER_REGISTRY-}basketapi
+    image: tsin24/basketapi
     build:
       context: .
       dockerfile: src/Basket.API/Dockerfile

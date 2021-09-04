@@ -24,7 +24,7 @@ services:
       depends_on: 
           - catalogdb
       ports: 
-          -  "443:443"
+          -  "8001:443"
     basket.api:
       image: tsin24/basketapi
       environment: 
@@ -33,6 +33,6 @@ services:
       depends_on: 
           - basketdb
       ports: 
-          -  "8004:80"    
+          -  "8002:80"    
 volumes: 
     mongo_data:                     

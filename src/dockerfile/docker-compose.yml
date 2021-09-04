@@ -1,0 +1,38 @@
+version: '3.4'
+
+services: 
+    catalogdb:
+      image: mongo
+      container_name: catalogdb
+      restart: always
+      volumes:  
+         - mongo_data:/data/db
+      ports:
+         - "27017:27017"
+    basketdb:
+      image: redis
+      container_name: basketdb
+      restart: always
+      ports:
+         - "6379:6379"     
+
+    catalogue:
+      image: tsin24/catalogue
+      environment: 
+          - ASPNETCORE_ENVIRONMENT=Development
+          - "CatalogDatabaseSettings:ConnectionString=mongodb://catalogdb:27017"
+      depends_on: 
+          - catalogdb
+      ports: 
+          -  "443:443"
+    basket.api:
+      image: tsin24/basketapi
+      environment: 
+          - ASPNETCORE_ENVIRONMENT=Development
+          - "ConnectionString:Redis=basketdb:6379"
+      depends_on: 
+          - basketdb
+      ports: 
+          -  "8004:80"    
+volumes: 
+    mongo_data:                     

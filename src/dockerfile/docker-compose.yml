@@ -24,7 +24,7 @@ services:
       depends_on: 
           - catalogdb
       ports: 
-          -  "8001:443"
+          -  "8001:80"
     basket.api:
       image: tsin24/basketapi
       environment: 
